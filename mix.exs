@@ -51,9 +51,9 @@ defmodule Texttile.MixProject do
       {:ecto_sqlite3, ">= 0.0.0"},
       {:phoenix_html, "~> 4.1"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
-      {:phoenix_live_view, "~> 1.1.0"},
+      {:phoenix_live_view, "~> 1.2.0"},
       {:lazy_html, ">= 0.1.0", only: :test},
-      {:phoenix_live_dashboard, "~> 0.8.3"},
+      {:phoenix_live_dashboard, "~> 0.9.1"},
       {:esbuild, "~> 0.10", runtime: Mix.env() == :dev},
       {:tailwind, "~> 0.3", runtime: Mix.env() == :dev},
       {:heroicons,
@@ -67,16 +67,16 @@ defmodule Texttile.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:gettext, "~> 1.0"},
       {:jason, "~> 1.2"},
-      {:dns_cluster, "~> 0.2.0"},
+      {:dns_cluster, "~> 0.3.1"},
       {:bandit, "~> 1.5"},
       {:swoosh, "~> 1.27"},
       {:vix, "~> 0.35"},
       {:mdex, "~> 0.9"},
-      {:bcrypt_elixir, "~> 3.0"},
+      {:bcrypt_elixir, "~> 4.0"},
       {:req, "~> 0.7"},
       {:gen_smtp, "~> 1.3"},
-      {:phoenix_test, "~> 0.11.1", only: :test, runtime: false},
-      {:phoenix_test_playwright, "~> 0.15.0", only: :test, runtime: false}
+      {:fluffy, "~> 0.9.0-rc.7", only: :test},
+      {:playwright, "~> 1.65.0-rc.6", hex: :playwright_ex, only: :test}
     ]
   end
 

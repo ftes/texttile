@@ -761,8 +761,8 @@ make db-pull
 
 ## Development
 
-Requires Elixir 1.19+, Erlang/OTP 28+, Node.js (for browser tests), and ffmpeg
-(for the video conversion; `make tools` installs it).
+Requires Elixir 1.19+, Erlang/OTP 28+, Node.js (for the asset packages and
+the JS tests), and ffmpeg (for the video conversion; `make tools` installs it).
 
 ```sh
 make tools       # install the command line tools: ffmpeg and ffprobe
@@ -824,7 +824,8 @@ are the exception the tool cannot see by itself: they are listed in
 
 `AGENTS.md` holds the permanent rules of this repository: branches, worktrees,
 versioning, tests, and the words to use. `PHOENIX.md` is the framework guide.
-`IMPORT.md` is the bundle format contract.
+`IMPORT.md` is the bundle format contract. `DESIGN.md` holds the visual rules
+and the log of visual regressions.
 
 ## License
 
